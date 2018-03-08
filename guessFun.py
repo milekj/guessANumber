@@ -32,7 +32,9 @@ def guess (number):
             if number == n:
                 print("Brawo! Magiczna liczba to: ", number)
                 return
+            elif n < number:
+                print("Magiczna liczba jest wieksza")
             else:
-                print("Nie udalo sie! Probuj dalej...")
+                print ("Magiczna liczba jest mniejsza")
 
 guess(randInRange())
